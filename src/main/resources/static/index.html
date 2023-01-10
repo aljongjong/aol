@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WelcomePage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
+</head>
+<body>
+    <!--1.header, footer 분리
+        2. css 분리
+    -->
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Content1</a></li>
+                <li><a href="#">Content2</a></li>
+                <li><a href="#">Content3</a></li>
+                <li><a href="#">Content4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--지도-->
+        <section class="">
+            <div id="map" style="width:100%;height:400px;"></div>
+        </section>
+        <hr>
+        <!--날씨-->
+        <section class="weather"></section>
+        <hr>
+        <!--영어 주소 검색-->
+        <section class="search-engAddr"></section>
+        <hr>
+        <!--노래방 노래 검색-->
+        <section class="search-singNum"></section>
+        <hr>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+    <script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+    };
+
+    var map = new naver.maps.Map('map', mapOptions);
+    </script>
+</body>
+</html>
