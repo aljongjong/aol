@@ -6,8 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title th:text="${param1}"></title>
 
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="/css/style.css">
       <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
+      <link th:if="${param1 == 'board'}" rel="stylesheet" href="/css/board.css">
     </head>
   </th:block>
 </html>

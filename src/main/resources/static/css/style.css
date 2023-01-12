@@ -43,6 +43,10 @@ header
     list-style: none;
     grid-row: none;
     text-align: center;
+}
+.menu > ul > li > a
+{
+    color: #262626;
     text-decoration: none;
 }
 .menu > ul > li > a:hover
