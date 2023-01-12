@@ -11,16 +11,24 @@ body
     font-family: 'Poppins', sans-serif;
 }
 /*header*/
+header
+{
+    height: 50px;
+    margin-bottom: 10px;
+}
 .logo
 {
+    height: 100%;
     width: 20%;
     float: left;
     text-align: center;
     font-size: 2em;
     border: 1px solid #262626;
+    text-decoration: none;
 }
 .menu
 {
+    height: 100%;
     width: 60%;
     float: right;
 }
@@ -35,4 +43,9 @@ body
     list-style: none;
     grid-row: none;
     text-align: center;
+    text-decoration: none;
+}
+.menu > ul > li > a:hover
+{
+    font-weight: bolder;
 }

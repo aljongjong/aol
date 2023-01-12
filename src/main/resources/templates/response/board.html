@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block th:replace="fragments/head :: head('aol > board')" ></th:block>
+<body>
+<th:block th:replace="fragments/header :: header"></th:block>
+<p th:text="${data}">empty</p>
+<th:block th:replace="fragments/footer :: footer"></th:block>
+</body>
+</html>
