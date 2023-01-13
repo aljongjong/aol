@@ -6,9 +6,20 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title th:text="${param1}"></title>
 
+      <!-- header css-->
       <link rel="stylesheet" href="/css/style.css">
-      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
+      <!-- board css -->
       <link th:if="${param1 == 'board'}" rel="stylesheet" href="/css/board.css">
+      <!-- board js -->
+      <script th:if="${param1 == 'board'}" src="/js/board.js"></script>
+
+
+      <!-- font-awesome -->
+      <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+      <!--<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>-->
     </head>
   </th:block>
 </html>

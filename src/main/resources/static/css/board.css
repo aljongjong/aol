@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 table
 {
-    margin: auto;
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: center;
 }
+table > caption
+{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.board-category
+{
+    font-size: 13px;
+    border-bottom: 1px solid #262626;
+}
+.board-contents
+{
+    font-size: 15px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 10px;
+}
+.fa-search
+{
+    cursor: pointer
+}
+caption > select {
+    display: none;
+}
+caption > input {
+    display: none;
+}
+caption > select.active {
+    display: block;
+}
+caption > input.active {
+    display: block;
+}
+
+
